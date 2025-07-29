@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply antialiased bg-black text-white;
+  }
+  
+  input::placeholder, textarea::placeholder {
+      @apply text-gray-400;
+  }
+}
+
+@layer components {
+    .form-input {
+        @apply block w-full bg-ui-gray border-none rounded-none shadow-sm py-2 px-3 focus:outline-none text-base text-white;
+    }
+    .form-select {
+         @apply block w-full bg-ui-gray border-none rounded-none shadow-sm py-2 px-3 focus:outline-none text-base text-white;
+    }
+     .btn {
+        @apply inline-flex items-center justify-center text-sm font-medium transition-colors focus:outline-none h-10 px-4 disabled:opacity-50 disabled:cursor-not-allowed bg-ui-gray text-white hover:bg-gray-700;
+    }
+    .btn-primary {
+        @apply bg-ui-gray text-white hover:bg-gray-700;
+    }
+    .btn-secondary {
+        @apply bg-ui-dark-gray text-white hover:bg-gray-800;
+    }
+}

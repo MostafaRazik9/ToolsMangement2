@@ -1,0 +1,9 @@
+
+{
+  "name": "Tools Manager",
+  "description": "An application to create, manage, and track defect reports for tools and equipment. It uses AI to suggest recommended actions for defects.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "prompt": ""
+}
